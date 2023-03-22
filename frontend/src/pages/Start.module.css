@@ -1,0 +1,93 @@
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.searchInputContainer {
+  margin-top: 5rem;
+  position: relative;
+  width: 90%;
+}
+
+@media (min-width: 800px) {
+  .searchInputContainer {
+    width: 50rem;
+  }
+}
+
+.searchInputContainer > div {
+  position: relative;
+}
+
+.searchInputContainer > div > i {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.search {
+  width: 100%;
+  height: 4rem;
+  border-radius: 4rem;
+  border: 0;
+  font-size: 1rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  color: #616161;
+  background: white;
+  transition: all 0.5s ease;
+}
+
+.search::placeholder {
+  font-size: 1.3rem;
+  transition: all 0.5s ease;
+  color: #f8bb9c;
+}
+
+.search:focus {
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.search:focus::placeholder {
+  transition: all 0.5s ease;
+  font-size: 1.2rem;
+  color: #afaeae;
+}
+
+.result {
+  background: #ffffff;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.result .item {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.result .item:hover {
+  background: #eef0fc;
+}
+
+.result .item a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result .item .name {
+  display: block;
+  font-size: 1.2rem;
+  color: #46a4f7;
+}
+
+.cash {
+  color: #cbba3f;
+  font-size: 1.5rem;
+}
